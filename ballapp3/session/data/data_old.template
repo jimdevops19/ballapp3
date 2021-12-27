@@ -1,0 +1,20 @@
+{
+  "session" : {
+    "attempts_str"                  : "",
+    "started_timestamp"             : "",
+    "finished_timestamp"            : ""
+  },
+  "session_analyze" : {
+    "total_attempts"                : 0,
+    "total_made"                    : 0,
+    "total_missed"                  : 0,
+    "list_in_a_row_made"            : null,
+    "most_in_a_row_made"            : 0,
+    "list_in_a_row_missed"          : null,
+    "most_in_a_row_missed"          : 0,
+    "five_by_five_str"              : "",
+    "ten_by_ten_str"                : "",
+    "duration_sec"                  : "",
+    "avg_time_per_shot"             : ""
+  }
+}

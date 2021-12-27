@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+
+{% block page_title %}
+    Session for {{ session_type }} - {{ session_name }}
+{% endblock %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="info-box">
+            <span class="info-box-icon bg-success">
+                <i class="fas fa-basketball-ball"></i>
+            </span>
+            <div class="info-box-content">
+                <span class="info-box-text">{{ session_type }} Made</span>
+                <span id="total_made" value="{{ stats.total_made }}" class="info-box-number">
+                    {{ stats.total_made }}
+                </span>
+            </div>
+            <div class="info-box-more">
+                {% for value in made_control_btn_values %}
+                    {% if value > 0 %}
+                        <button onclick='changeValue("{{ value }}", "total_made");' type="button" class="btn btn-success btn-block">
+                            <i class="fa fa-arrow-circle-up"></i>
+                            <span>{{ value }}</span>
+                        </button>
+                    {% else %}
+                        <button onclick='changeValue("{{ value }}", "total_made")' type="button" class="btn btn-secondary btn-block">
+                            <i class="fa fa-arrow-circle-down"></i>
+                            <span>Undo</span>
+                        </button>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="info-box">
+            <span class="info-box-icon bg-danger">
+                <i class="fas fa-basketball-ball"></i>
+            </span>
+            <div class="info-box-content">
+                <span class="info-box-text">{{ session_type }} Missed</span>
+                <span id="total_missed" value="{{ stats.total_missed }}" class="info-box-number">
+                    {{ stats.total_missed }}
+                </span>
+            </div>
+            <div class="info-box-more">
+                {% for value in missed_control_btn_values %}
+                    {% if value > 0 %}
+                        <button onclick='changeValue("{{ value }}", "total_missed")' type="button" class="btn btn-danger btn-block">
+                            <i class="fa fa-arrow-circle-up"></i>
+                            <span>{{ value }}</span>
+                        </button>
+                    {% else %}
+                        <button onclick='changeValue("{{ value }}", "total_missed")' type="button" class="btn btn-secondary btn-block">
+                            <i class="fa fa-arrow-circle-down"></i>
+                            <span>Undo</span>
+                        </button>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="info-box">
+            <span class="info-box-icon bg-info"><i class="fas fa-basketball-ball"></i></span>
+            <div class="info-box-content">
+                <span class="info-box-text">{{ session_type }} Attempts</span>
+                <span id="total_attempts" value="{{ stats.total_attempts }}" class="info-box-number">{{ stats.total_attempts }}</span>
+            </div>
+            <div id="info-box-attempts" class="info-box-more">
+                {% if attempts_str %}
+                    {% for str in attempts_str %}
+                        {% if str == '1' %}
+                            <i style="color: darkorange;" class="fas fa-basketball-ball"></i>
+                        {% elif str == '0' %}
+                            <i style="color: gray;" class="fas fa-basketball-ball"></i>
+                        {% endif %}
+                        {% if loop.index % 5 == 0 %}
+                            <br>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+                <!-- Updated in the script live! -->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card card-secondary">
+                <div class="card-header">
+                    <h3 class="card-title">Session Analyze</h3>
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    {% for k,v in stats.items() %}
+                        {{ k }} - {{ v }}
+                        <br>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+<style>
+    .info-box-number {
+        font-size: 30px;
+    }
+</style>
+<script src="{{ url_for('static', filename='edit_session.js') }}"></script>
+<script>
+    function updateDataJson(value, attempt_result){
+        $.ajax({
+            type:"POST",
+            url: "{{url_for('session.update_data_json', session_name=session_name, session_type=session_type)}}",
+            data:{'value' : value, 'attempt_result' : attempt_result},
+         })
+
+    }
+    function addAttempts(by, elementId="total_attempts") {
+        increaseValue = parseInt(by);
+        previousValue = parseInt(document.getElementById(elementId).innerHTML);
+        newValue = previousValue + increaseValue;
+
+        // Set to new value:
+        document.getElementById(elementId).value = newValue;
+        document.getElementById(elementId).innerHTML = newValue;
+    }
+
+    function changeValue(by, elementId) {
+        //Function supports decreasing too because sometimes we pass negative values:
+        increaseValue = parseInt(by);
+        previousValue = parseInt(document.getElementById(elementId).innerHTML);
+        newValue = previousValue + increaseValue;
+
+        // Set to new value:
+        if (increaseValue > 0) {
+            document.getElementById(elementId).value = newValue;
+            document.getElementById(elementId).innerHTML = newValue;
+        }
+
+        // Change the attempts:
+        addAttempts(by);
+
+        // Send the update data json to edit the files:
+        if(elementId.includes('missed')) {
+            updateDataJson(increaseValue, 'missed')
+        }
+        if (elementId.includes('made')) {
+            updateDataJson(increaseValue, 'made')
+        }
+    }
+</script>
+
+<script>
+  // Interval Scripts
+  setInterval(function() {
+      fetch("{{url_for('session.attempts_str_json', session_name=session_name, session_type=session_type)}}").then(
+        response => response.json()
+      ).then(
+        data => updateBoxInfoAttempts(data.attempts_str)
+      )
+    }, 1000
+  );
+
+  function createIcon(color) {
+      e = document.createElement('i');
+      e.className = "fas fa-basketball-ball";
+      e.style.color = color;
+      toAdd = document.getElementById('info-box-attempts');
+      toAdd.appendChild(e)
+  }
+
+  function updateBoxInfoAttempts(attempts_str){
+      // Delete all child elements
+      parentElem = document.getElementById('info-box-attempts');
+      parentElem.innerHTML = '';
+      [...attempts_str].forEach(function (s, i) {
+          if (s === "1") {
+              createIcon('darkorange')
+          } else if (s === "0") {
+              createIcon('gray')
+          }
+          index = i + 1;
+          if (index % 5 === 0) {
+              br = document.createElement('br');
+              parentElem.appendChild(br)
+          }
+      })
+  }
+</script>
+{% endblock %}
+
+
