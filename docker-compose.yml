@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  web:
+    build: web
+    restart: always
+    ports:
+      - 5000:5000
+    environment:
+      - DEBUG=0
+    networks:
+      - flask_network
+  proxy:
+    build: proxy
+    restart: always
+    ports:
+      - 80:80
+    networks:
+      - flask_network
+
+networks:
+  flask_network:
