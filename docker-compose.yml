@@ -16,6 +16,8 @@ services:
       - 80:80
     networks:
       - flask_network
+    volumes:
+      -
 
 
 networks:
