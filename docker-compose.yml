@@ -17,5 +17,6 @@ services:
     networks:
       - flask_network
 
+
 networks:
   flask_network:
