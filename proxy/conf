@@ -1,6 +1,10 @@
 server {
     listen        80;
     server_name   localhost;
+    location /static/ {
+        autoindex on;
+        alias /static/;
+    }
     location / {
         proxy_pass http://web:5000;
     }
