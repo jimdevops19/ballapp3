@@ -2,71 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3dc26ad-385b-464b-82e5-64a84181ac12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ballapp3/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/session/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/session/constants.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/session/data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/session/data/data.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/session/data/data_old.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/session/data/free_throw/26_12_21_23_42_20.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/session/data/free_throw/27_12_21_00_02_45.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/session/data/free_throw/27_12_21_02_24_45.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/session/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/session/routes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/session/stats.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/edit_session.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/bootstrap/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/all.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/all.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/brands.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/brands.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/fontawesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/fontawesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/regular.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/regular.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/solid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/solid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/svg-with-js.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/svg-with-js.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/v4-shims.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/css/v4-shims.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-brands-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-brands-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-brands-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-brands-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-brands-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-regular-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-regular-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-regular-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-regular-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-solid-900.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-solid-900.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-solid-900.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/jquery/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/jquery/jquery.slim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/jquery/jquery.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/static/plugins/jquery/jquery.slim.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/templates/edit_session.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/templates/ensure_session_create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/templates/includes/sidebar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/templates/includes/top-navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ballapp3/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ballapp3/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/ballapp3/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +12,60 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/ballapp3/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/ballapp3/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -92,6 +82,8 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/web/requirements.txt" />
+        <option value="$PROJECT_DIR$/web/ballapp3/__init__.py" />
       </list>
     </option>
   </component>
@@ -123,6 +115,17 @@
           <expand>
             <path>
               <item name="ballapp3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ballapp3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ballapp3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ballapp3" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ballapp3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ballapp3" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="ballapp3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -162,12 +165,12 @@
       <workItem from="1640638758016" duration="779000" />
       <workItem from="1640987607373" duration="625000" />
       <workItem from="1641391747507" duration="1250000" />
-      <workItem from="1641510323354" duration="1609000" />
+      <workItem from="1641510323354" duration="2512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4263000" />
+    <option name="totallyTimeSpent" value="5166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -266,10 +269,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="170">
           <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ballapp3/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ballapp3/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

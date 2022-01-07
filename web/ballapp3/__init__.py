@@ -1,5 +1,5 @@
 from flask import Flask
-
+import os
 
 def create_app():
     app = Flask(
@@ -8,7 +8,7 @@ def create_app():
         static_url_path='',
     )
 
-    app.config['SECRET_KEY'] = 'ec9439cfc6c796ae2029594d'
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
     # Import your blueprints, register them:
     from ballapp3.session.routes import session
 
