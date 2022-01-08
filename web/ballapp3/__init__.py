@@ -13,4 +13,5 @@ def create_app():
     from ballapp3.session.routes import session
 
     app.register_blueprint(session)
+
     return app
