@@ -1,3 +1,4 @@
+import os
 from flask import url_for, redirect, Blueprint, request
 from flask_mail import Message
 from ballapp3 import mail
@@ -12,7 +13,8 @@ def email_route():
     msg.subject = "BallApp3 is ready to use ✔️"
     msg.body = f"""
     BallApp3 is ready to use!
-    Access through: http://{request.environ.get('HTTP_X_REAL_IP', request.remote_addr)}
+    Access through: http://{os.environ.get('PUBLIC_IP')}
+    
     """
     mail.send(msg)
 
