@@ -8,7 +8,7 @@ email = Blueprint('email', __name__)
 
 @email.route("/send_ready_email")
 def email_route():
-    msg = Message('Hello', sender='jokelie1919@gmail.com', recipients=['jimshapedcoding@gmail.com'])
+    msg = Message('Hello', sender='infoballapp@gmail.com', recipients=['jimshapedcoding@gmail.com'])
     msg.subject = "BallApp3 is ready to use ✔️"
     msg.body = f"""
     BallApp3 is ready to use!
