@@ -119,7 +119,6 @@
             url: "{{url_for('session.update_data_json', session_name=session_name, session_type=session_type)}}",
             data:{'value' : value, 'attempt_result' : attempt_result},
          })
-
     }
     function addAttempts(by, elementId="total_attempts") {
         increaseValue = parseInt(by);
