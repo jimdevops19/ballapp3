@@ -9,8 +9,8 @@ This project has a private repo that creates an EC2 with Terraform, runs an Ansi
 
 This is awesome, because it gives me the ability to turn on the application before I go playing basketball, and turn off when I come back home, because I only need this EC2 to run when I play :)
 
-Soon, this project will be added to my GitHub too.
+The Project of the automation is not added yet to my repo
 
-Here is a demo of the project though, cool isn't it ? 
+Here is a demo of the Flask app though, cool isn't it ? 
 
 ![Capture](https://user-images.githubusercontent.com/49904449/171499652-a52db2b6-2e84-4ca4-bf05-30772937ecbf.PNG)
