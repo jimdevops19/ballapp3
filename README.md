@@ -13,5 +13,4 @@ Soon, this project will be added to my GitHub too.
 
 Here is a demo of the project though, cool isn't it ? 
 
-
-![ball app 3](demo.png "ball app 3")
+![Capture](https://user-images.githubusercontent.com/49904449/171499652-a52db2b6-2e84-4ca4-bf05-30772937ecbf.PNG)
