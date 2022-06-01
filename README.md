@@ -11,6 +11,6 @@ This is awesome, because it gives me the ability to turn on the application befo
 
 The Project of the automation is not added yet to my repo
 
-Here is a demo of the Flask app though, cool isn't it ? 
+Here is how the of the Flask app though, cool isn't it ? 
 
 ![Capture](https://user-images.githubusercontent.com/49904449/171499652-a52db2b6-2e84-4ca4-bf05-30772937ecbf.PNG)
